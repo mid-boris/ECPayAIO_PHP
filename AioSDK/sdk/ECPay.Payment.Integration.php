@@ -1448,7 +1448,7 @@ class ECPay_WebATM extends ECPay_Verification
 class ECPay_Credit extends ECPay_Verification
 {
     public $arPayMentExtend = array(
-                                    "CreditInstallment" => 0,
+                                    "CreditInstallment" => '',
                                     "InstallmentAmount" => 0,
                                     "Redeem"            => FALSE,
                                     "UnionPay"          => FALSE,
