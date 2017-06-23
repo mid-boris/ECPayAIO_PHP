@@ -19,9 +19,9 @@ $ecpay_applepay = new Ecpay_ApplePay ;
 
 // 蒐集參數
 $ecpay_applepay->ServiceURL 			= 'https://payment-stage.ecpay.com.tw/ApplePay/CreateServerOrder/V2' ;
-$ecpay_applepay->MerchantID 			= '2000132' ;
-$ecpay_applepay->HashKey 			= '5294y06JbISpM5x9' ;
-$ecpay_applepay->HashIV 			= 'v77hoKGq4kWxNNIS' ;
+$ecpay_applepay->MerchantID 			= '聯繫ECPAY取得帳號' ;
+$ecpay_applepay->HashKey 			= '聯繫ECPAY取得HashKey' ;
+$ecpay_applepay->HashIV 			= '聯繫ECPAY取得HashIV' ;
 
 $ecpay_applepay->Send['MerchantTradeNo'] 	= $nOrder_Id;
 $ecpay_applepay->Send['MerchantTradeDate'] 	= date('Y/m/d H:i:s');

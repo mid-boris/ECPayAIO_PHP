@@ -2,9 +2,9 @@
 
 $sLog_Path 	= '/var/tmp/applog_test.txt' ; // LOG路徑
 
-$MerchantID 	= '3002739' ;
-$HashKey 	= 'EXBteYAL70Kb4wvc' ;
-$HashIV 	= '7Tv7WNVeUTj2giXi' ;
+$MerchantID 	= '聯繫ECPAY取得帳號' ;
+$HashKey 	= '聯繫ECPAY取得HashKey' ;
+$HashIV 	= '聯繫ECPAY取得HashIV' ;
 $ServiceURL 	= 'https://payment-stage.ecpay.com.tw/ApplePay/CreateServerOrder/V2';
 
 

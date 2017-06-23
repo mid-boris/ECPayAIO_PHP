@@ -65,9 +65,6 @@ function beginPayment() {
 	        	label: apple_pay_params.lable,
 	        	amount: apple_pay_params.amount 		/* amount為交易金額，商家需自行帶入此次交易的金額 */
 	        }
-	        //,requiredBillingContactFields: ['postalAddress'],
-	        //requiredShippingContactFields: [ "postalAddress","name","phone","email"],
-	        //shippingMethods: []
 	};
 
 	
@@ -121,15 +118,6 @@ function beginPayment() {
                 });
 
 	};
-
-	session.onshippingcontactselected = function (event) {
-		//alert(event.shippingContact);
-
-		console.log(event.shippingContact);
-
-		//session.completeShippingContactSelection(ApplePaySession.STATUS_SUCCESS, [], { label: 'hihi',amount: 77777}, []);
-	};
-
 
 	/* 付款授權事件 */
 	session.onpaymentauthorized = function (event) {

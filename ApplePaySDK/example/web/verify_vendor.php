@@ -12,10 +12,10 @@ $ecpay_applepay = new Ecpay_ApplePay ;
 
 $ecpay_applepay->ServiceURL 				= $validation_url ;
 
-$ecpay_applepay->Verify_Vendor['displayName'] 		= 'merchant.ECpay.ECC';	// apple Merchant ID.
+$ecpay_applepay->Verify_Vendor['displayName'] 		= 'merchantIdentifier';	// apple Merchant ID.
 $ecpay_applepay->Verify_Vendor['crt_path'] 		= 'ApplePay.crt.pem'; 	// 憑證檔案絕對路徑
 $ecpay_applepay->Verify_Vendor['key_path'] 		= 'ApplePay.key.pem'; 	// 憑證檔案絕對路徑
-$ecpay_applepay->Verify_Vendor['key_password'] 		= 'ecpay';
+$ecpay_applepay->Verify_Vendor['key_password'] 		= 'password';
 
 $aMsg_Return = $ecpay_applepay->Verify_Vendor();
 echo json_encode($aMsg_Return);

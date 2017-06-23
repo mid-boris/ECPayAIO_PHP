@@ -131,10 +131,12 @@ class Ecpay_ApplePay
 			'step1_url'		=> '',
 			'step2_url'		=> '',
 			'debug_mode'		=> 'yes',
-			'server_https' 		=> $_SERVER['HTTPS'],
+			'server_https' 		=> '',
 			'success_site_url' 	=> '',
 			'order_id' 		=> ''
 	        );
+
+	        $this->Applepay_Button['server_https'] = isset($_SERVER['HTTPS']) ? $_SERVER['HTTPS'] : '' ;
 
 	        // 廠商憑證驗證
 	        $this->Verify_Vendor = array(
